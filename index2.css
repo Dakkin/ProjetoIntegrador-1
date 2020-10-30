@@ -1,0 +1,236 @@
+*
+{
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Mono";
+
+}
+
+body
+{
+  display: flex;
+  background-color: #f6f7f2;
+}
+
+.sidebar
+{
+  /* 16px */
+  width: 5rem;
+  height: 100vh;
+
+  background: rgb(210,223,47);
+  background: linear-gradient(0deg, rgba(210,223,47,1) 22%, rgba(39,190,0,0.8715861344537815) 89%);
+ 
+  overflow: hidden;
+
+  box-shadow: 1px 2px 4px 5px rgba(0, 0, 0, 0.4);
+
+  position: fixed;
+
+}
+
+.container-icons
+{
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-icon
+{
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.sidebar-icon > i
+{
+
+  margin: auto;
+
+  overflow: hidden;
+  font-size: 2.2rem;
+  color: black;
+  text-align: center;
+
+  transition: font-size ease 300ms;
+  
+}
+
+.sidebar-icon:hover > i
+{
+  font-size: 2.6rem;
+}
+
+.main-container
+{
+
+  margin-left: 5rem;
+
+  overflow: hidden;
+
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.search-container
+{
+
+  align-self: center;
+
+  padding: 1.4rem;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.input-search
+{
+
+  width: 80%;
+  height: 1.8rem;
+  padding: 0.4rem;
+
+  border: 2px solid rgb(172, 203, 230);
+  border-radius: 32px;
+
+  text-align: center;
+
+
+  outline: none;
+
+  transition: all ease 300ms;
+
+}
+
+.input-search:focus,
+.input-search:valid
+{
+  width: 90%;
+
+  border: 2px solid rgb(40, 132, 218);
+
+}
+
+.input-search:valid
+{
+  text-align: left;
+}
+
+.past-searchs
+{
+
+  margin: 1.4rem;
+  padding: 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.past-searchs > h3
+{
+  margin: 0.4rem;
+}
+
+.past-searchs > span
+{
+  cursor: pointer;
+  margin: 0 0 0.6rem 1.4rem;
+}
+
+.categories-container
+{
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  margin-top: auto;
+  margin-bottom: 1.4rem;
+
+}
+
+
+.cat-list
+{
+
+
+  padding: 0.4rem;
+
+  list-style: none;
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+
+  column-gap: 8px;
+
+}
+
+.music-cat
+{
+
+  cursor: pointer;
+
+  border-radius: 18px;
+
+  margin: 0.4rem;
+
+  width: 100%;
+  height: 8rem;
+
+  box-shadow: 1px 2px 4px 5px rgba(0, 0, 0, 0.377);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.music-cat > i
+{
+  font-size: 5.4rem;
+  text-align: center;
+}
+
+.music-cat > span
+{
+  font-size: 2.8rem;
+  text-align: center;
+  margin-left: 1.2rem;
+}
+
+
+
+

@@ -1,0 +1,251 @@
+*
+{
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Mono";
+
+}
+
+body
+{
+  display: flex;
+  background-color: #f6f7f2;
+}
+
+.sidebar
+{
+  /* 16px */
+  width: 5rem;
+  height: 100vh;
+
+  background: rgb(210,223,47);
+  background: linear-gradient(0deg, rgba(210,223,47,1) 22%, rgba(39,190,0,0.8715861344537815) 89%);
+ 
+  overflow: hidden;
+
+  box-shadow: 1px 2px 4px 5px rgba(0, 0, 0, 0.4);
+
+  position: fixed;
+
+}
+
+.container-icons
+{
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-icon
+{
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.sidebar-icon > i
+{
+
+  margin: auto;
+
+  overflow: hidden;
+  font-size: 2.2rem;
+  color: black;
+  text-align: center;
+
+  transition: font-size ease 300ms;
+  
+}
+
+.sidebar-icon:hover > i
+{
+  font-size: 2.6rem;
+}
+
+
+
+.main-container
+{
+
+  margin-left: 6rem;
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.photo-container
+{
+
+  margin: 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  align-self: center;
+
+  width: 100%;
+
+}
+
+.photo-container > img
+{
+  border-radius: 18px;
+  margin-bottom: 0.4rem;
+}
+
+.photo-container > p:first-of-type
+{
+  font-size: 1.4rem;
+}
+
+
+.input-container
+{
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0.4rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 1.2rem;
+
+}
+
+
+.input-container > .input-item
+{
+
+  width: 100%;
+  flex: 0 50%;
+
+}
+
+.input-container > .input-item > input[type = "text"],
+.input_2-container > .spotify-info > input[type = "text"]
+{
+
+  width: 55%;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  border-bottom: 2px solid #879feed5;
+  padding: 0.2rem;
+
+  transition: all ease 300ms;
+
+}
+
+.input-container > .input-item > input[type = "text"]:focus,
+.input_2-container > .spotify-info > input[type = "text"]:focus
+{
+  width: 65%;
+  border-bottom: 2px solid #1d4de9d5;
+}
+
+
+.input_2-container
+{
+
+  padding: 1.4rem;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+}
+
+.spotify-info
+{
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+
+}
+
+.spotify-info > i
+{
+  margin-right: 1.2rem;
+  font-size: 2.4rem;
+}
+
+.buttons-container
+{
+
+  width: 100%;
+
+  align-self: center;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 0.8rem;
+
+}
+
+.buttons-container > button
+{
+
+  width: 50%;
+
+}
+
+
+@media screen and (max-width: 600px)
+{
+
+  .input-container
+  {
+    flex-direction: column;
+  }
+
+  .input-container > .input-item
+  {
+    flex: 0 100%;
+    flex-direction: column;
+  }
+
+  .input-container > .input-item > input[type = "text"],
+  .input_2-container > .spotify-info > input[type = "text"]
+  {
+    width: 90%;
+  }
+
+  .input-container > .input-item > input[type = "text"]:hover,
+  .input_2-container > .spotify-info > input[type = "text"]:hover
+  {
+    width: 90%;
+  }
+
+
+}
